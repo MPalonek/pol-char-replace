@@ -4,7 +4,7 @@ from argparse import ArgumentParser
 import logging
 
 CHAR_LIST = [["¹", "ą"],
-             ["Æ", "Ć"],Æ
+             ["Æ", "Ć"],
              ["æ", "ć"],
              ["ê", "ę"],
              ["£", "Ł"],
