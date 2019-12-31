@@ -4,12 +4,16 @@ from argparse import ArgumentParser
 import logging
 
 CHAR_LIST = [["¹", "ą"],
+             ["Æ", "Ć"],Æ
              ["æ", "ć"],
              ["ê", "ę"],
+             ["£", "Ł"],
              ["³", "ł"],
              ["ñ", "ń"],
+             ["Œ", "Ś"],
              ["œ", "ś"],
              ["Ÿ", "ź"],
+             ["¯", "Ż"],
              ["¿", "ż"]]
 
 
@@ -22,7 +26,7 @@ def parse_arguments():
 
 
 def convert(input, output):
-    input_f = open(input, "r+", encoding="utf-8")
+    input_f = open(input, "r+", encoding="utf-8", errors='ignore')
     text = input_f.read()
     input_f.close()
 
